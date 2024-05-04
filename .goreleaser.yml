@@ -14,7 +14,7 @@ builds:
     flags:
       - -trimpath
     ldflags:
-      - "-s -w -X 'github.com/SAP/terraform-provider-btp/internal/version.ProviderVersion={{.Version}}'"
+      - "-s -w -X 'github.com/SAP/terraform-provider-btp/internal/version.ProviderVersion={{.Version}}' -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{ .CommitDate }}"
     goos:
       - freebsd
       - windows
