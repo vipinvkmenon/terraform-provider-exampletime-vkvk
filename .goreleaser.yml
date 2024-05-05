@@ -58,3 +58,5 @@ release:
   # draft: true
 changelog:
   use: github-native
+gomod:
+  proxy: true
